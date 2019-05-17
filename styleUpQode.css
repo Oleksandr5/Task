@@ -8,7 +8,7 @@
         url('fonts/DITED/Dited.woff') format('woff'),
         url('fonts/DITED/Dited.ttf') format('truetype'),
         url('fonts/DITED/Dited.svg#Dited') format('svg');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
