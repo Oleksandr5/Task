@@ -12,8 +12,6 @@
     font-style: normal;
 }
 
-
-
 .light {
   font-weight: 300;
 }
@@ -185,6 +183,9 @@ nav {
     top: 0.4vw;
     font-size: 1.6vw;
 }
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
 .dropdown-submenu {
   position: relative;
 }
@@ -200,7 +201,7 @@ nav {
     color: #fff;
 }
 .dropdown-submenu .dropdown-menu {
-  top: 1vw;
+  top: 0.5vw;
   left: 100%;
   margin-left: .1vw;
   margin-right: .1vw;
@@ -367,8 +368,11 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.icons-see img {
-    width: 50%;
+.icons-see a {
+    width: 40%;   
+}
+
+.icons-see a img {    
     object-fit: cover;
 }
 
@@ -496,6 +500,7 @@ input::placeholder {
     font-size: 1vw;
     border-radius: unset;
     border: 0.1vw solid #ced4da;
+    color: #fff;
 }
 .btn {
     border: 1px solid transparent;

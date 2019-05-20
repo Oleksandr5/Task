@@ -102,6 +102,9 @@
         height: 1vw;          
         top: 8vw;
     }
+    .text-see a {        
+        font-size: 2vw; 
+    }
     
     /*For section id="aboutUs"*/
     
@@ -258,6 +261,9 @@
         width: 0.9vw;
         height: 1vw;         
         top: 8vw;
+    }
+    .text-see a {        
+        font-size: 2vw; 
     }
         
     /*For section id="aboutUs"*/
@@ -419,6 +425,9 @@
         width: 0.9vw;
         height: 1vw;               
         top: 10vw;
+    }
+    .text-see a {        
+        font-size: 2vw; 
     }
         
     /*For section id="aboutUs"*/

@@ -8,38 +8,18 @@ $('.carousel').carousel ({
     interval: 4000
 });
 
-// For active block in the menu
+// For menu: Activate scrollspy to add active class to navbar items on scroll
 
-(function($) {
-  "use strict"; // Start of use strict
+(function($) { 
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
     offset: 54
   });
 
-})(jQuery); // End of use strict
+})(jQuery); 
 
+// For menu: background and color on hover
 
 let aMenu = document.querySelectorAll('.navbar-nav .dropdown-menu a');
 let dropdown_item = document.querySelectorAll('.dropdown-item');
@@ -76,25 +56,6 @@ function windowSizeMap () {
 }
 
 $(window).on('load resize', windowSizeMap);
-
-
-// For menu
-
-$('.dropdown-menu a.dropdown-toggle').on('mouseenter', function(e) {
-  if (!$(this).next().hasClass('show')) {
-    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-  }
-  var $subMenu = $(this).next(".dropdown-menu");
-  $subMenu.toggleClass('show');
-
-
-  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-    $('.dropdown-submenu .show').removeClass("show");
-  });
-
-
-  return false;
-});
 
 
 // Form validation
@@ -193,8 +154,8 @@ $('.dropdown-menu a.dropdown-toggle').on('mouseenter', function(e) {
                       </div>
                         
                       <div class="icons-see">
-                        <img src="img/infinity.png" alt="">
-                        <img src="img/plus.png" alt="">                        
+                        <a href="#"><img src="img/infinity.png" alt=""></a>
+                        <a href="#"><img src="img/plus.png" alt=""></a>                        
                       </div>
                     </div>
               </div>
